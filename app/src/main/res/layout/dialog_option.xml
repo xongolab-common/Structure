@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dr_top_corner_white_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp"
+        android:layout_margin="@dimen/_8sdp">
+
+        <LinearLayout
+            android:id="@+id/llOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/llCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp"
+                android:background="@drawable/dr_primary_bg_15"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/_12sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_75sdp"
+                    android:scaleType="centerInside"
+                    android:layout_height="@dimen/_75sdp"
+                    app:srcCompat="@drawable/ic_camera"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTakePicture"
+                    style="@style/Text12MediumWhite"
+                    android:text="Take a Picture"
+                    android:layout_width="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp"
+                android:background="@drawable/dr_button_black_border_10"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_12sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="@dimen/_75sdp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_gallery"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvGallery"
+                    style="@style/Text12MediumBlack"
+                    android:text="Gallery"
+                    android:layout_width="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnCancel"
+            style="@style/ButtonParentStyle"
+            android:layout_below="@id/llOption"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="" />
+
+    </RelativeLayout>
+
+</layout>

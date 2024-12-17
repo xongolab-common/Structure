@@ -57,5 +57,51 @@ dependencies {
     implementation(libs.ssp.android)
     implementation(libs.sdp.android)
 
+    // CircularImageView
+    implementation(libs.circleimageview)
+
+    //Image Loading
+    implementation(libs.fresco)
+
+    // Cropping Image Selection
+   // implementation (libs.ucrop)
+
+    // Coroutine
+    implementation(libs.kotlinx.coroutines.android)
+
+    // Retrofit
+    implementation(libs.retrofit)
+    implementation(libs.retrofit2.converter.gson)
+    implementation(libs.retrofit2.adapter.rxjava2)
+    implementation(libs.converter.scalars)
+    implementation(libs.retrofit2.converter.simplexml)
+    implementation(libs.gson)
+    implementation(libs.logging.interceptor)
+
+    // Country Code Picker
+    implementation(libs.ccp)
+
+    //otp
+    implementation(libs.otpview)
+
+    //dots indicator
+    implementation(libs.dotsindicator)
+
+    //google login
+//    implementation(libs.gms.play.services.auth)
+
+
+    implementation(libs.androidx.viewpager2)
+    implementation(libs.tbuonomo.dotsindicator)
+
+    // Glide
+    implementation(libs.glide)
+
+    implementation(libs.glide)
+    annotationProcessor(libs.compiler)
+
+    implementation(libs.threetenabp)
+
+
 
 }
